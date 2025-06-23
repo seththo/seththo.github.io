@@ -1,7 +1,7 @@
 :root[data-theme='light'] {
   --bg-color: #ffffff;
   --text-color: #111111;
-  --link-color: #1a73e8;
+  --accent-color: #1a73e8;
   --button-bg: #f0f0f0;
   --border-color: #e5e5e5;
 }
@@ -9,7 +9,7 @@
 :root[data-theme='dark'] {
   --bg-color: #1c1c1c;
   --text-color: #f3f3f3;
-  --link-color: #8ab4f8;
+  --accent-color: #8ab4f8;
   --button-bg: #333333;
   --border-color: #333333;
 }
@@ -25,20 +25,29 @@ body {
 }
 
 header {
-  text-align: center;
   padding: 2rem 0 1.5rem;
   border-bottom: 1px solid var(--border-color);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 nav {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 0.5rem;
+  margin: 1rem auto 0;
+  max-width: 800px;
 }
 
 nav a {
-  color: var(--link-color);
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: 500;
 }
@@ -48,19 +57,21 @@ nav a:hover {
 }
 
 button#theme-toggle {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  margin-top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
   border: none;
   background-color: var(--button-bg);
   color: var(--text-color);
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 50%;
   transition: background-color 0.3s ease;
 }
 
 button#theme-toggle:hover {
-  background-color: var(--link-color);
+  background-color: var(--accent-color);
   color: #fff;
 }
 
