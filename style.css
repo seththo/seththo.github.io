@@ -84,6 +84,12 @@ section {
   margin-bottom: 3rem;
 }
 
+#pong {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--button-bg);
+}
+
 article {
   margin-bottom: 1.5rem;
 }
