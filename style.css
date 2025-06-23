@@ -84,6 +84,17 @@ section {
   margin-bottom: 3rem;
 }
 
+article {
+  margin-bottom: 1.5rem;
+}
+
+#pongCanvas {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  background-color: var(--button-bg);
+}
+
 footer {
   text-align: center;
   padding: 1.5rem 0;
