@@ -91,12 +91,44 @@ article {
 #pongCanvas {
   display: block;
   margin: 0 auto;
-  border: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   background-color: var(--button-bg);
+}
+
+#scoreboard {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 footer {
   text-align: center;
   padding: 1.5rem 0;
   border-top: 1px solid var(--border-color);
+}
+
+#contact-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+}
+
+#contact-btn:hover {
+  filter: brightness(1.1);
+}
+
+#runner {
+  position: fixed;
+  bottom: 1rem;
+  left: -40px;
+  font-size: 2rem;
+  pointer-events: none;
+  animation: run-across 5s linear infinite;
+}
+
+@keyframes run-across {
+  from { left: -40px; }
+  to { left: calc(100% + 40px); }
 }
