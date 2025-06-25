@@ -45,7 +45,7 @@
     </section>
 
     <section id="pong">
-      
+      <div id="scoreBoard">Player: 0 | AI: 0</div>
       <canvas id="pongCanvas" width="600" height="400"></canvas>
     </section>
   </main>
@@ -68,6 +68,7 @@
 
     // Simple Pong game
     const canvas = document.getElementById('pongCanvas');
+    const scoreboard = document.getElementById('scoreBoard');
     if (canvas) {
       const ctx = canvas.getContext('2d');
       const paddleHeight = 80;
@@ -75,6 +76,8 @@
       const player = { x: 10, y: canvas.height / 2 - paddleHeight / 2 };
       const ai = { x: canvas.width - 20, y: canvas.height / 2 - paddleHeight / 2 };
       const ball = { x: canvas.width / 2, y: canvas.height / 2, vx: 4, vy: 4, r: 8 };
+      let playerScore = 0;
+      let aiScore = 0;
 
       function drawRect(x, y, w, h) { ctx.fillRect(x, y, w, h); }
       function drawBall() { ctx.beginPath(); ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2); ctx.fill(); }
@@ -91,8 +94,16 @@
         ai.y += (ball.y - (ai.y + paddleHeight / 2)) * 0.05;
 
         if (ball.x < 0 || ball.x > canvas.width) {
+          if (ball.x < 0) {
+            aiScore++;
+          } else {
+            playerScore++;
+          }
           ball.x = canvas.width / 2;
           ball.y = canvas.height / 2;
+          if (scoreboard) {
+            scoreboard.textContent = `Player: ${playerScore} | AI: ${aiScore}`;
+          }
         }
       }
 
