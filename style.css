@@ -31,6 +31,11 @@ header {
   border-bottom: 1px solid var(--border-color);
 }
 
+.header-top h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -103,4 +108,15 @@ footer {
   text-align: center;
   padding: 1.5rem 0;
   border-top: 1px solid var(--border-color);
+}
+
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.photo-grid img {
+  width: 100%;
+  border-radius: 8px;
 }
