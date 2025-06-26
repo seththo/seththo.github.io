@@ -21,6 +21,7 @@
       <a href="#about">About</a>
       <a href="Seth_Thomassen_Resume_2025.pdf" target="_blank">Resume</a>
       <a href="#contact">Contact</a>
+      <a href="#photos" id="photos-tab">Photos</a>
     </nav>
   </header>
 
@@ -44,12 +45,14 @@
       <p><a href="https://linkedin.com/in/seth-thomassen" target="_blank">LinkedIn Profile</a></p>
     </section>
 
-    <section id="photos">
+    <section id="photos" class="hidden">
       <h2>Photos</h2>
+      <p class="photo-intro">I enjoy capturing little moments and sharing them here.</p>
       <div class="photo-grid">
         <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=400&q=80" alt="Sunset" />
         <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Mountains" />
         <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80" alt="Forest" />
+        <img src="https://images.unsplash.com/photo-1499083097717-a156f98e6f14?auto=format&fit=crop&w=400&q=80" alt="City" />
       </div>
     </section>
   </main>
@@ -68,6 +71,14 @@
       root.setAttribute('data-theme', newTheme);
       toggleButton.textContent = newTheme === 'dark' ? '☀️' : '🌙';
       toggleButton.setAttribute('aria-label', newTheme === 'dark' ? 'Toggle light mode' : 'Toggle dark mode');
+    });
+
+    const photosTab = document.getElementById('photos-tab');
+    const photosSection = document.getElementById('photos');
+    photosTab.addEventListener('click', e => {
+      e.preventDefault();
+      photosSection.classList.remove('hidden');
+      photosSection.scrollIntoView({ behavior: 'smooth' });
     });
 
   </script>

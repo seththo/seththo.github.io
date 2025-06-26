@@ -100,10 +100,18 @@ footer {
   border-top: 1px solid var(--border-color);
 }
 
+.hidden {
+  display: none;
+}
+
+.photo-intro {
+  margin-bottom: 1rem;
+}
+
 .photo-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .photo-grid img {
