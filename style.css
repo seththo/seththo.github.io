@@ -88,22 +88,6 @@ article {
   margin-bottom: 1.5rem;
 }
 
-#pongCanvas {
-  display: block;
-  margin: 0 auto;
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  background-color: var(--button-bg);
-}
-
-#scoreBoard {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: var(--accent-color);
-  background-color: var(--button-bg);
-  padding: 0.25rem 0;
-}
 
 footer {
   text-align: center;
