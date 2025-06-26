@@ -1,17 +1,19 @@
 :root[data-theme='light'] {
-  --bg-color: #ffffff;
+  --bg-color: #f9fafb;
   --text-color: #111111;
-  --accent-color: #1a73e8;
+  --accent-color: #5c8ded;
   --button-bg: #f0f0f0;
   --border-color: #e5e5e5;
+  --section-bg: #ffffff;
 }
 
 :root[data-theme='dark'] {
   --bg-color: #1c1c1c;
   --text-color: #f3f3f3;
-  --accent-color: #8ab4f8;
+  --accent-color: #9ab6f8;
   --button-bg: #333333;
   --border-color: #333333;
+  --section-bg: #242424;
 }
 
 body {
@@ -82,6 +84,14 @@ main {
 
 section {
   margin-bottom: 3rem;
+  background-color: var(--section-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+h1,
+h2 {
+  color: var(--accent-color);
 }
 
 article {
