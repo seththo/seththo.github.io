@@ -100,6 +100,9 @@ article {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  background-color: var(--button-bg);
+  padding: 0.25rem 0;
 }
 
 footer {

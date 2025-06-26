@@ -76,11 +76,21 @@
       const player = { x: 10, y: canvas.height / 2 - paddleHeight / 2 };
       const ai = { x: canvas.width - 20, y: canvas.height / 2 - paddleHeight / 2 };
       const ball = { x: canvas.width / 2, y: canvas.height / 2, vx: 4, vy: 4, r: 8 };
+      const paddleColor = '#6495ed';
+      const ballColor = '#ffb347';
       let playerScore = 0;
       let aiScore = 0;
 
-      function drawRect(x, y, w, h) { ctx.fillRect(x, y, w, h); }
-      function drawBall() { ctx.beginPath(); ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2); ctx.fill(); }
+      function drawRect(x, y, w, h) {
+        ctx.fillStyle = paddleColor;
+        ctx.fillRect(x, y, w, h);
+      }
+      function drawBall() {
+        ctx.beginPath();
+        ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2);
+        ctx.fillStyle = ballColor;
+        ctx.fill();
+      }
 
       function update() {
         ball.x += ball.vx;
