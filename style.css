@@ -32,12 +32,12 @@
 }
 
 body {
-  background: var(--bg-gradient);
+  background-color: var(--bg-color);
   color: var(--text-color);
   font-family: 'Times New Roman', serif;
   margin: 0;
   padding: 0 1rem;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   line-height: 1.6;
 }
 
