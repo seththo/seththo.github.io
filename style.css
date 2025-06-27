@@ -169,6 +169,18 @@ footer {
   margin-bottom: 1rem;
 }
 
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.contact-email i {
+  color: var(--accent-color);
+}
+
 .contact-button {
   display: inline-flex;
   align-items: center;
