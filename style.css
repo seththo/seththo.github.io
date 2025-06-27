@@ -1,8 +1,8 @@
 :root[data-theme='light'] {
   --bg-color: #ffffff;
   --text-color: #333333;
-  --accent-color: #007bff;
-  --bg-gradient: linear-gradient(to bottom right, #f0f0f0, #b0c7ff, #ffffff);
+  --accent-color: #ff9100;
+  --bg-gradient: linear-gradient(to bottom right, #fff9e2, #ffd966, #ffffff);
   --button-bg: #f8f8f8;
   --border-color: #cccccc;
   --header-footer-bg: #ffffff;
@@ -12,8 +12,8 @@
 :root[data-theme='dark'] {
   --bg-color: #121212;
   --text-color: #f3f3f3;
-  --accent-color: #007bff;
-  --bg-gradient: linear-gradient(to bottom right, #2c2c2c, #0a3d62, #000000);
+  --accent-color: #ff9100;
+  --bg-gradient: linear-gradient(to bottom right, #2c2c2c, #663300, #000000);
   --button-bg: #1e1e1e;
   --border-color: #333333;
   --header-footer-bg: #1a1a1a;
@@ -159,7 +159,7 @@ footer {
 
 .footer-contact a,
 .footer-contact span {
-  color: #007bff;
+  color: var(--accent-color);
   font-size: 1.2rem;
   text-decoration: none;
 }
@@ -184,7 +184,7 @@ footer {
   height: 2.75rem;
   border-radius: 50%;
   background-color: var(--button-bg);
-  color: #007bff;
+  color: var(--accent-color);
   font-size: 1.3rem;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
