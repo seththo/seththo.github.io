@@ -10,15 +10,3 @@ if (toggleButton) {
   });
 }
 
-const contactForm = document.getElementById('contact-form');
-const formStatus = document.getElementById('form-status');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (formStatus) {
-      formStatus.textContent = 'Thanks for reaching out!';
-      formStatus.hidden = false;
-    }
-    contactForm.reset();
-  });
-}
