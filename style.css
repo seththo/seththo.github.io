@@ -157,7 +157,7 @@ footer {
 
 .footer-contact a,
 .footer-contact span {
-  color: var(--accent-color);
+  color: #007bff;
   font-size: 1.2rem;
   text-decoration: none;
 }
@@ -169,29 +169,16 @@ footer {
   margin-bottom: 1rem;
 }
 
-.contact-email {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.2rem;
-  color: var(--accent-color);
-  text-decoration: none;
-}
-.contact-email i {
-  color: var(--accent-color);
-}
-
 .contact-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid var(--border-color);
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 50%;
   background-color: var(--button-bg);
-  color: var(--accent-color);
-  font-size: 1.2rem;
+  color: #007bff;
+  font-size: 1.3rem;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
