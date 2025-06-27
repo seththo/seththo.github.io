@@ -1,7 +1,7 @@
 :root[data-theme='light'] {
   --bg-color: #fafafa;
   --text-color: #333333;
-  --accent-color: #4f86f7;
+  --accent-color: #fa8231;
   --button-bg: #ffffff;
   --border-color: #dddddd;
   --header-footer-bg: #ffffff;
@@ -11,7 +11,7 @@
 :root[data-theme='dark'] {
   --bg-color: #121212;
   --text-color: #f3f3f3;
-  --accent-color: #7aa8ff;
+  --accent-color: #fa8231;
   --button-bg: #1e1e1e;
   --border-color: #333333;
   --header-footer-bg: #1a1a1a;
@@ -21,7 +21,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Times New Roman', serif;
   margin: 0;
   padding: 0 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -35,7 +35,7 @@ header {
 }
 
 .header-top h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 2.5rem;
 }
 
