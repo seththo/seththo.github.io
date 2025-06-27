@@ -24,19 +24,19 @@
   </header>
 
   <main>
-    <section id="home">
+    <section id="home" class="animate">
       <h2>Welcome</h2>
       <p>This is my personal and professional website.</p>
     </section>
 
-    <section id="about">
+    <section id="about" class="animate">
       <h2>About Me</h2>
       <p>Hi, I’m Seth — a recent graduate from the Isenberg School of Management at UMass Amherst, where I studied Marketing and earned a certificate in Data Analytics. I’ve always been curious about how people make decisions and how data can help tell better stories.</p>
       <p>I’ve worked in fast-moving environments where showing up, solving problems, and getting results mattered. Whether I was leading a team project, talking to customers, or figuring out a better way to get something done, I leaned into the challenge and learned a lot along the way.</p>
       <p>What drives me most is connection — building strong relationships, understanding what people need, and making things better. I bring energy, empathy, and a strong work ethic to everything I do, and I’m excited to keep learning and growing in whatever comes next.</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="animate">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:seththomassen1@gmail.com">seththomassen1@gmail.com</a></p>
       <p>Location: Boston, Massachusetts</p>
@@ -60,6 +60,17 @@
       toggleButton.textContent = newTheme === 'dark' ? '☀️' : '🌙';
       toggleButton.setAttribute('aria-label', newTheme === 'dark' ? 'Toggle light mode' : 'Toggle dark mode');
     });
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 
   </script>
 </body>
