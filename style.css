@@ -126,3 +126,23 @@ footer {
   width: 100%;
   border-radius: 8px;
 }
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-list li i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
