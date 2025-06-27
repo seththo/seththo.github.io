@@ -51,18 +51,6 @@
     <p>© 2025 Seth Thomassen</p>
   </footer>
 
-  <script>
-    const toggleButton = document.getElementById('theme-toggle');
-    const root = document.documentElement;
-
-    toggleButton.addEventListener('click', () => {
-      const currentTheme = root.getAttribute('data-theme');
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      root.setAttribute('data-theme', newTheme);
-      toggleButton.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-      toggleButton.setAttribute('aria-label', newTheme === 'dark' ? 'Toggle light mode' : 'Toggle dark mode');
-    });
-
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
