@@ -38,15 +38,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <ul class="contact-list">
-            <li><i class="fa-solid fa-envelope"></i><a href="mailto:seththomassen1@gmail.com">seththomassen1@gmail.com</a></li>
-            <li><i class="fa-solid fa-location-dot"></i>Boston, Massachusetts</li>
-            <li><i class="fa-brands fa-linkedin"></i><a href="https://linkedin.com/in/seth-thomassen" target="_blank">LinkedIn</a></li>
-          </ul>
-        </div>
-        <form id="contact-form">
+      <form id="contact-form">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
 
@@ -59,12 +51,16 @@
           <button type="submit">Send</button>
           <p id="form-status" role="alert" hidden></p>
         </form>
-      </div>
     </section>
 
   </main>
 
   <footer>
+    <div class="footer-contact">
+      <a href="mailto:seththomassen1@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <span aria-label="Boston, Massachusetts"><i class="fa-solid fa-location-dot"></i></span>
+      <a href="https://linkedin.com/in/seth-thomassen" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
     <p>© 2025 Seth Thomassen</p>
   </footer>
 

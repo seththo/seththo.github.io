@@ -192,3 +192,17 @@ footer {
   color: var(--accent-color);
 }
 
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact a,
+.footer-contact span {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
