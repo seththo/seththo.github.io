@@ -10,3 +10,16 @@ if (toggleButton) {
   });
 }
 
+const customCursor = document.getElementById('custom-cursor');
+if (customCursor) {
+  document.addEventListener('mousemove', (e) => {
+    customCursor.style.left = `${e.clientX}px`;
+    customCursor.style.top = `${e.clientY}px`;
+  });
+
+  document.querySelectorAll('a, button').forEach((el) => {
+    el.addEventListener('mouseenter', () => customCursor.classList.add('active'));
+    el.addEventListener('mouseleave', () => customCursor.classList.remove('active'));
+  });
+}
+
